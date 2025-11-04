@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html lang="so">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BBC - Template (Sample)</title>
+  <style>
+    /* Simple BBC-like responsive template - edit content below */
+    :root{
+      --brand:#bb1919; /* change to your brand color */
+      --muted:#6b6b6b;
+      --max-width:1100px;
+      --gap:16px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:#f6f6f6;color:#111}
+    .container{max-width:var(--max-width);margin:0 auto;padding:20px}/* Header */
+header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{font-weight:700;color:var(--brand);font-size:22px}
+.search{display:flex;align-items:center;gap:8px}
+.search input{padding:8px 10px;border:1px solid #ddd;border-radius:4px}
+
+/* Nav */
+nav{display:flex;gap:12px;padding:8px 0;border-top:1px solid #eee;border-bottom:1px solid #eee;background:#fff}
+nav a{padding:10px 12px;text-decoration:none;color:#222;font-weight:600}
+nav a:hover{background:#f2f2f2}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:2fr 1fr;gap:var(--gap);margin-top:18px}
+.featured{background:#fff;padding:14px;border-radius:6px}
+.featured img{width:100%;height:320px;object-fit:cover;border-radius:4px}
+.featured h1{font-size:22px;margin:12px 0}
+.featured p{color:var(--muted);line-height:1.5}
+
+.side-cards{display:flex;flex-direction:column;gap:12px}
+.side-card{background:#fff;padding:12px;border-radius:6px}
+.side-card img{width:100%;height:90px;object-fit:cover;border-radius:4px}
+.side-card h3{margin:8px 0;font-size:15px}
+
+/* Grid of articles */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--gap);margin-top:18px}
+.card{background:#fff;padding:12px;border-radius:6px}
+.card img{width:100%;height:140px;object-fit:cover;border-radius:4px}
+.card h4{margin:10px 0 6px;font-size:16px}
+.card p{color:var(--muted);font-size:14px}
+
+/* Sidebar */
+.layout{display:grid;grid-template-columns:3fr 1fr;gap:18px;margin-top:18px}
+.sidebar{display:flex;flex-direction:column;gap:12px}
+.trending{background:#fff;padding:12px;border-radius:6px}
+.trending li{padding:8px 0;border-bottom:1px solid #f1f1f1}
+
+/* Footer */
+footer{margin-top:24px;padding:18px 0;color:var(--muted);font-size:14px}
+
+/* Responsive */
+@media (max-width:900px){
+  .grid{grid-template-columns:repeat(2,1fr)}
+  .hero{grid-template-columns:1fr}
+  .layout{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .grid{grid-template-columns:1fr}
+  .featured img{height:200px}
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo" style="display:flex;align-items:center;gap:10px;"><img src="https://i.postimg.cc/X7My8Sdd/IMG-20251030-WA0004.jpg" alt="Logo" style="height:36px;border-radius:6px;object-fit:cover;"><div><strong>JOBKEY </strong><div style="font-size:12px;color:var(--muted);font-weight:600">UNIVERSITY </div></div></div>
+        <div style="color:var(--muted);font-size:14px">News & Features</div>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Raadi... (search)" aria-label="search"/>
+        <button onclick="alert('Search is demo only')">Raadi</button>
+      </div>
+    </header><nav>
+   <mark><a href="#">wararka cusub</a> </mark>
+  <mark> <a href="#">iskashiga calamiga</a></mark>
+  <mark> <a href="#">qeybaha ugu wen</a></mark>
+  <mark> <a href="#">wararka manta </a></mark>
+</nav>
+
+<section class="hero">
+  <article class="featured">
+    <img src="https://i.postimg.cc/X7My8Sdd/IMG-20251030-WA0004.jpg" alt="Featured"/>
+    <h1>WAR-QORAAD KU SAABSAN SHIRARKA MAAMULAYASHA JOBKEY</h1>
+    <p> Jobkey ayaa maanta qabatay shir qiimeyn iyo qorsheyn istaraatiiji ah oo ay isugu yimaadeen maamulayaasha waaxaha kala duwan. Shirkan ayaa diiradda lagu saaray horumarinta adeegyada shaqo raadiyayaasha iyo kor u qaadista tayada adeegga ay siiso shirkaddu macaamiisheeda</p>
+  </article>
+
+  <aside class="side-cards">
+    <div class="side-card">
+      <img src="https://i.postimg.cc/s2b8T4z5/FB-IMG-1762240026001.jpg" alt="Side 1">
+      <h3>“Mamulayaasha Jobkey ayaa maanta isku raacay tallaabooyin cusub oo kor loogu qaadayo waxqabadka.”</h3>
+      <p style="color:var(--muted);font-size:13px">“Wada tashiga mamaulayasha Jobkey wuxuu xoogga saaray sidii loo gaari lahaa yoolal waaweyn oo guul leh.”</p>
+    </div>
+    <div class="side-card">
+      <img src="https://i.postimg.cc/P59dYZC1/FB-IMG-1762239345678.jpg" alt="Side 2">
+      <h3>jamacada jobkey iyo iskashiga xiriirka jamacadaha caalamiga</h3>
+      <p style="color:var(--muted);font-size:13px">“Jamacda Jobkey ayaa xoojisay wada-shaqeynta waxbarasho iyo cilmi-baaris, iyadoo iskaashi la sameysay jaamacadaha Al-Carabiya iyo kuwa caalamiga ee la aqoonsan yahay.”</p>
+    </div>
+  </aside>
+</section>
+
+<div class="layout">
+  <main>
+    <div class="grid" id="articles">
+      <!-- Repeatable cards: change images, titles, excerpts -->
+      <article class="card">
+        <img src="https://i.postimg.cc/130vcrdq/IMG-20251104-WA0002.jpg" alt="A1">
+        <h4>jamacada jobkey iyo mamulaysha </h4>
+        <p>“Mamulayaasha oo dhan ayaa ka qaybgalay wada-tashi muhiim ah, si loo dardargeliyo horumarinta shaqada qeybaheeda kala duwan iyo is gaarsiinta waxbarsho tayo leh ”.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://i.postimg.cc/525sqSrm/IMG-20251104-WA0001.jpg" alt="A2">
+        <h4>jamacda jobkey iyo dhaqamadee hore ee soomalida </h4>
+        <p>“Qabashada hidaha iyo dhaqanka Soomaaliyeed ee hore ayaa Jamacda Jobkey ka dhigtay xarun kor loogu qaado dhaqanka iyo hidaha.”
+.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://i.postimg.cc/8zdZBmYH/IMG-20251104-WA0000.jpg" alt="A3">
+        <h4>mamulaysha shiirkule iyo ka qeyb qaadashada hormar iyo gualal wacan.</h4>
+        <p>
+1. “Hoggaaminta Maxamed deeqle iyo Usama ayaa qeyb ka ahayd guulaha maamulka iyo horumarinta howlaha shaqada ee qeybta Shiirkule.”
+</p>
+      </article>
+
+      <article class="card">
+        <img src="https://i.postimg.cc/s2b8T4z5/FB-IMG-1762240026001.jpg" alt="A4">
+        <h4>jamacada jobkey ayaa fursad waxbarasho ufurtay ardeyda sandkaan gali doonto imtixanka dowliga dhexe ee somaliya </h4>
+        <p>“jamacda jobkey ayaa soo saartay warar muhiim u ah ardeyda jecel in ay dalka dibadiisa wac ku bartaan kuwaso luu hayo fursad ay kaga faaideysan karan ilaa iyo sanadka cusub ayago laga rabo dhalasho iyo suganan,damiin la hubo uu damanad leh ,id card f4 uu imtixanka dowliga ku galay ”</p>
+      </article>
+
+      
+
+  <aside class="sidebar">
+    <div class="trending">
+      <h3>Trending</h3>
+      <ul style="list-style:none;padding-left:0;margin:8px 0">
+        <li>1. jobkey ayaa soo wato courses online free ah kaso aad ka faideysan karto barashada luqadaha kala duwan ee caalamka </li>
+        <li>2. qeybaha courses  : waxa ka mid ah = barashada luqadaha iyo iyo la qabsashada soo jeedinta fagaaro ka hadalka,  </li>
+        <li>3. Ciyaaraha: jobkey ayaa sanadki qabato ciyaaro kala duwan uu sports iyo kuwa hiddo iyo dhaqan ah </li>
+      </ul>
+    </div>
+
+    <div class="trending">
+      <h3>Subscribe</h3>
+      <p style="font-size:14px;color:var(--muted)">Geli email-kaaga si aad u hesho wararka cusub.</p>
+      <input type="email" placeholder="Email" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:4px;margin-top:8px"/>
+      <button style="margin-top:8px;padding:8px 12px;border-radius:4px;border:0;background:var(--brand);color:#fff;cursor:pointer">Subscribe</button>
+    </div>
+
+    <div class="trending">
+      <h3>Links</h3>
+      <p style="font-size:13px;color:var(--muted)">@jobkey u.n.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+    <div>© 2025 Jobkey univirsity</div>
+    <div style="color:var(--muted)">About ·jobkey@email.com</div>
+  </div>
+</footer>
+
+  </div>  <script>
+    // Small helper: dynamically add articles (example)
+    // Replace or remove as you like.
+    (function(){
+      const articles = document.getElementById('articles');
+      // Example: add more cards programmatically
+      // for (let i=7;i<=9;i++){
+      //   const art = document.createElement('article'); art.className='card';
+      //   art.innerHTML = `<img src="https://via.placeholder.com/600x400?text=Article+${i}" alt=""><h4>Maqaal ${i}</h4><p>Qoraal kooban.</p>`;
+      //   articles.appendChild(art);
+      // }
+    })();
+  </script></body>
+</html>
